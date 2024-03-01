@@ -1,0 +1,431 @@
+@font-face
+{
+	font-family: Jura;
+	src: url(../G-Fonts/Jura-SemiBold.ttf);
+}
+*,
+::before,
+::after
+{
+	outline: none;
+	box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar 
+{
+  	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track 
+{
+  	background: #dcdcdcf0;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb 
+{
+  	background: #949494;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{
+ 	background: #636363;
+}
+::selection 
+{
+  	color: white;
+  	background: #4b4b4b;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: Jura;
+	background-color: #151515;
+	overflow-y: scroll;
+}
+.container
+{
+	
+}
+.add-form-c
+{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+  	margin: auto;
+  	padding: 20px;
+  	width: 80%;
+  	min-height: auto;
+  	border-radius: 20px;
+	box-shadow: 0 0 10px 1px #000000;
+	padding: 30px;
+	overflow: hidden;
+}
+.container .ad-q-h
+{
+	width: 205px;
+	font-size: 30px;
+	font-weight: bold;
+    color: #ffffff;	
+    padding: 5px 0px;
+    margin: -10px 0 10px 0 ;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    user-select: none;
+}
+.container .add-form
+{
+	border: 0px solid #ddd;
+	padding: 0px;
+}
+.container .add-form .add-ques-input
+{
+	font-family: Jura;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 80px;
+    color: #717171;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #ffffff14;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px #000000;
+    border: 0px solid #000;
+}
+.container .add-form .add-option-container
+{
+	font-family: Jura;
+	border: 0px solid #ddd;
+	padding: 00px 0 0 0;
+}
+.container .add-form .add-option-container .add-option
+{
+	font-family: Jura;
+    box-shadow: 0 0 5px 1px #000000;
+    border: 0px solid #000;
+    display: block;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    height: 35px;
+    color: #717171;
+
+    font-size: 15px;
+    background-color: #00000000;
+    border-radius: 5px;
+    padding: 10px;
+    /*box-shadow: 0 0 5px 1px #a4a4a4;*/
+}
+.container .add-form .select-point-container
+{
+	font-family: Jura;
+	border: 0px solid #b9b9b9;
+	padding: 10px 0;
+}
+.container .add-form .select-point-container .select-option-div
+{
+    width: 500px;
+}
+.container .add-form .select-point-container .select-option-div .ad-sel
+{
+	width: 100%;
+	border-radius: 5px;
+	background-color: #00000000;
+	padding: 10px;
+	color: #717171;
+    box-shadow: 0 0 5px 1px #000000;
+    border: 0px solid #000;
+    font-size: 15px;
+}
+.container .add-form .select-point-container .select-option-div .ad-sel .ad-sel-op
+{
+	font-family: Jura;
+	border: 0px solid #ddd;
+	background: #151515;
+}
+.container .add-form .select-point-container .point-div
+{
+	border: 0px solid #b9b9b9;
+	float: right;
+	width: 100px;
+}
+.container .add-form .select-point-container .point-div .point-m
+{
+	font-family: Jura;
+	width: 100%;
+	border-radius: 5px;
+	background-color: #0000;
+	padding: 10px;
+	color: #717171;
+	box-shadow: 0 0 5px 1px #000000;
+    border: 0px solid #000;
+    font-size: 15px;
+}
+.display-inline
+{
+    display: inline-block;
+}
+.container .add-form .add-btn-box
+{
+	border: 0px solid #d8d8d8;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+.container .add-form .add-btn-box .add-btn
+{
+	width: 40%;
+	margin: auto;
+	border: 0px solid #ddd;
+	border-radius: 5px;
+	padding: 10px 20px;
+	/*background:  linear-gradient(180deg,#000,20%,#2f2f2f,60%,#000);*/
+	/*background-color:  #345aff;*/
+	color: #fff;
+	font-size: 18px;
+}
+.container .add-form .add-ques-input:focus,
+.container .add-form .add-option-container .add-option:focus,
+.container .add-form .select-point-container .select-option-div .ad-sel:focus,
+.container .add-form .select-point-container .point-div .point-m:focus
+{
+	font-family: Jura;
+	border: 1px solid #4eb6ff;
+	box-shadow: 0 0 0 3px #58a7df82;
+	color: #fff;
+	/* 
+
+	Input Form Theme
+	
+	Black Theme
+	border: 1px solid #1f1f1f;
+	box-shadow: 0 0 0 3px #1f1f1f80;
+
+	Orange Theme
+	border: 1px solid #ff984e;
+	box-shadow: 0 0 0 3px #ef995b61;
+
+	Red Theme
+	border: 1px solid #ff5252;
+	box-shadow: 0 0 0 3px #ff4e4e7a;
+
+	Dark Green Theme
+	border: 1px solid #02ad00;
+	box-shadow: 0 0 0 3px #02ad0075;
+
+	Light Green Theme
+	border: 1px solid #88e487;
+	box-shadow: 0 0 0 3px #88e4876e;
+
+	Dark Purple Theme
+	border: 1px solid #3f00ff;
+	box-shadow: 0 0 0 3px #3f00ff73;
+
+	Light Purple Theme
+	border: 1px solid #ea38ff;
+	box-shadow: 0 0 0 3px #ea38ff63;
+	*/
+}
+.container .add-form .add-btn-box .add-btn:hover,
+.container .add-form .add-btn-box .add-btn:focus
+{
+	box-shadow: 0 0 15px 2px #000000;
+	/*background-color: #0c0c0c;*/
+}
+
+/* Light Theme */
+/*
+@font-face
+{
+	font-family: Jura;
+	src: url(../G-Fonts/Jura-SemiBold.ttf);
+}
+*,
+::before,
+::after
+{
+	outline: none;
+	box-sizing: border-box;
+}
+::-webkit-scrollbar 
+{
+  	width: 10px;
+}
+::-webkit-scrollbar-track 
+{
+  	background: #dcdcdcf0;
+}
+::-webkit-scrollbar-thumb 
+{
+  	background: #949494;
+}
+::-webkit-scrollbar-thumb:hover 
+{
+ 	background: #636363;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: Jura;
+	background-color: #e2e2e2;
+	overflow-y: scroll;
+}
+.container
+{
+	
+}
+.add-form-c
+{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+  	margin: auto;
+  	padding: 20px;
+  	width: 80%;
+  	min-height: auto;
+  	border-radius: 20px;
+	box-shadow: 0 0 10px 1px #000000;
+	padding: 30px;
+	overflow: hidden;
+}
+.container .ad-q-h
+{
+	width: 205px;
+	font-size: 30px;
+	font-weight: bold;
+    color: #353535;	
+    padding: 5px 0px;
+    margin: -10px 0 10px 0 ;
+    border-bottom: 1px solid #353535;
+    cursor: pointer;
+    user-select: none;
+}
+.container .add-form
+{
+	border: 0px solid #ddd;
+	padding: 0px;
+}
+.container .add-form .add-ques-input
+{
+	font-family: Jura;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 80px;
+    color: #717171;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #ffffff14;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px #000000;
+    border: 0px solid #000;
+}
+.container .add-form .add-option-container
+{
+	font-family: Jura;
+	border: 0px solid #ddd;
+	padding: 00px 0 0 0;
+}
+.container .add-form .add-option-container .add-option
+{
+	font-family: Jura;
+    box-shadow: 0 0 5px 1px #000000;
+    border: 0px solid #000;
+    display: block;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    height: 35px;
+    color: #717171;
+
+    font-size: 15px;
+    background-color: #00000000;
+    border-radius: 5px;
+    padding: 10px;
+}
+.container .add-form .select-point-container
+{
+	font-family: Jura;
+	border: 0px solid #b9b9b9;
+	padding: 10px 0;
+}
+.container .add-form .select-point-container .select-option-div
+{
+    width: 500px;
+}
+.container .add-form .select-point-container .select-option-div .ad-sel
+{
+	width: 100%;
+	border-radius: 5px;
+	background-color: #00000000;
+	padding: 10px;
+	color: #717171;
+    box-shadow: 0 0 5px 1px #000000;
+    border: 0px solid #000;
+    font-size: 15px;
+}
+.container .add-form .select-point-container .select-option-div .ad-sel .ad-sel-op
+{
+	font-family: Jura;
+	border: 0px solid #ddd;
+	background: #151515;
+}
+.container .add-form .select-point-container .point-div
+{
+	border: 0px solid #b9b9b9;
+	float: right;
+	width: 100px;
+}
+.container .add-form .select-point-container .point-div .point-m
+{
+	font-family: Jura;
+	width: 100%;
+	border-radius: 5px;
+	background-color: #0000;
+	padding: 10px;
+	color: #717171;
+	box-shadow: 0 0 5px 1px #000000;
+    border: 0px solid #000;
+    font-size: 15px;
+}
+.display-inline
+{
+    display: inline-block;
+}
+.container .add-form .add-btn-box
+{
+	border: 0px solid #d8d8d8;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+.container .add-form .add-btn-box .add-btn
+{
+	width: 40%;
+	margin: auto;
+	border: 0px solid #ddd;
+	border-radius: 5px;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 18px;
+}
+.container .add-form .add-ques-input:focus,
+.container .add-form .add-option-container .add-option:focus,
+.container .add-form .select-point-container .select-option-div .ad-sel:focus,
+.container .add-form .select-point-container .point-div .point-m:focus
+{
+	font-family: Jura;
+	border: 1px solid #ff4e0a;
+	box-shadow: 0 0 0 3px #ff860073;
+	color: #0a0a0a;
+	font-weight: bold;
+	
+}
+.container .add-form .add-btn-box .add-btn:hover,
+.container .add-form .add-btn-box .add-btn:focus
+{
+	box-shadow: 0 0 15px 2px #000000;
+}
+*/

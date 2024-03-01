@@ -1,0 +1,280 @@
+@font-face
+{
+	font-family: Jura;
+	src: url(../G-Fonts/Jura-SemiBold.ttf);
+}
+@font-face
+{
+	font-family: roboto;
+	src: url(../G-Fonts/Roboto-Regular.ttf);
+}
+*,
+::before,
+::after
+{
+	outline: none;
+	box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar 
+{
+  	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track 
+{
+  	background: #dcdcdcf0;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb 
+{
+  	background: #949494;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{
+ 	background: #636363;
+}
+::selection 
+{
+  	color: white;
+  	background: #4b4b4b;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: Jura;
+/*	font-family: arial , sans-serif;*/
+	background-color: #ffffff;
+	overflow-y: scroll;
+}
+.container
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 700px;
+	height: 240px;
+	border: none;
+	
+}
+.container .pric-cont
+{
+	display: inline-block;
+	width: 280px;
+	height: 100%;
+	color: #232323;
+	font-size: 20px;
+	border: 0px solid #000;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 0 10px 2px #afafaf;
+	padding: 10px 20px;
+	overflow: hidden;
+	font-family: roboto;
+}
+.container .pric-cont i
+{
+	color: #009bff;
+	margin: 0 10px 0 0;
+}
+.container .pric-cont .btn-p
+{
+    margin: 30px 0 0 0;
+	border: none;
+	border-radius: 5px;
+	padding: 12px;
+	text-align: center;
+	background: #212121;
+	color: #f1f1f1;
+	font-size: 18px;
+	cursor: all;
+	user-select: none;
+	box-shadow: 0 0 5px 1px #000000;
+	font-family: jura;
+	transition:0.1s;
+}
+.container .pric-cont .btn-p#click-btn
+{
+	margin: 0;
+	border: none;
+	border-radius: 5px;
+	padding: 15px;
+	text-align: center;
+	background: #d6d6d6;
+	color: #4c4c4c;
+	height: 40%;
+	font-size: 40px;
+	box-shadow: 0 0 5px 1px #000000;
+	transition:0.1s;
+}
+.container .pric-cont .btn-p:hover,
+.container .pric-cont .btn-p:focus,
+.container .pric-cont .btn-p#click-btn:hover,
+.container .pric-cont .btn-p#click-btn:focus
+{
+	color: #fff;
+	background: #212121;
+	box-shadow: 0 0 2px 1px #000000;
+}
+.openDiv
+{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 60%;
+	height: auto;
+	color: #232323;
+	border: 0px solid #000;
+	overflow: hidden;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 0 10px 2px #9a9a9a;
+	font-family: roboto;
+}
+.openDiv h2
+{
+	padding: 18px;
+}
+.openDiv .close-btn
+{
+    float: right;
+    color: #8e8e8e;
+    background: #bbbbbb7d;
+    padding: 4px 10px;
+    border: 0px solid #000;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0;
+    font-size: 25px;
+    transition: 0.2s ease;
+}
+.openDiv .close-btn:hover,
+.openDiv .close-btn:focus
+{
+	color: #353535;
+    background: #1919194a;
+}
+.openDiv .payment-data-cont
+{
+	width: 100%;
+	padding: 20px 40px;
+}
+.openDiv .payment-data-cont .payment-data
+{
+	margin: 0 0 20px 0;
+	background: #ffcd9ecc;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 18px;
+	color: #3c3c3c;
+}
+.fl-right
+{
+	float: right;
+}
+@media screen and (max-width: 751px)
+{
+	.fl-right
+	{
+		float: none;
+	}
+    .container
+    {
+    	border: 0px solid;
+        width: 290px;
+	    height: 480px;
+	    margin: auto;	
+    }
+    .container .pric-cont
+    {
+        margin: auto;
+        margin-bottom:40px;
+	    display: block;
+	    width: 280px;
+	    height: 50%;
+	    color: #232323;
+	    font-size: 20px;
+	    border: 0px solid #000;
+	    border-radius: 10px;
+    	background: #fff;
+    	box-shadow: 0 0 10px 2px #afafaf;
+	    padding: 10px 20px;
+	    overflow: hidden;
+    	font-family: roboto;
+    }
+    .openDiv
+    {
+    	width: 600px;
+    }
+}
+@media screen and (max-width: 651px)
+{
+    .openDiv
+    {
+    	width: 500px;
+    }
+}
+@media screen and (max-width: 551px)
+{
+    .openDiv
+    {
+    	width: 400px;
+    }
+}
+@media screen and (max-width: 451px)
+{
+    .openDiv
+    {
+    	width: 350px;
+    }
+    .openDiv .payment-data-cont .payment-data
+    {
+    	font-size: 17px;
+    }
+}
+@media screen and (max-width: 351px)
+{
+    .openDiv
+    {
+    	margin-top: 10px;
+    	width: 280px;
+    	height: 450px;
+    	overflow-y: scroll;
+    }
+    .openDiv .payment-data-cont
+    {
+    	padding: 10px;
+    }
+    .openDiv .payment-data-cont .payment-data
+    {
+    	font-size: 15px;
+    }
+}
+@media screen and (max-width: 251px)
+{
+    .openDiv
+    {
+    	margin-top: 10px;
+    	width: 210px;
+    	height: 450px;
+    	overflow-y: scroll;
+    }
+    .openDiv .payment-data-cont
+    {
+    	padding: 2px;
+    }
+    .openDiv .payment-data-cont .payment-data
+    {
+    	font-size: 12px;
+    }
+}

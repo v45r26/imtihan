@@ -1,0 +1,121 @@
+@font-face
+{
+	font-family: digital-clock-f;
+	src: url(../G-Fonts/DS-DIGIB.ttf);
+}
+.fieldset
+{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 220px;
+	border: none;
+	padding: 0;
+	border: 0px solid #000;
+	border-radius: 10px;
+    background: #353535;
+    box-shadow: 0 0 2px 1px #000,0 0 10px 1px #000 inset;
+    overflow: hidden;
+    user-select: none;
+}
+.fieldset .legend
+{
+	font-family: jura;
+	color: #fff;
+	padding: 8px 8px;
+	font-size: 25px;
+	margin: 0 0 -10px 0;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	background: #353535;
+	box-shadow: 0 0 10px 1px #000,0 0 10px 1px #000000a3;
+	text-shadow: 0 0 5px #000;	
+    cursor: pointer;
+}
+.fieldset .time-box
+{
+	padding: 20px 15px 15px 15px;
+    text-align: center;
+	color: #13faff;
+	font-size: 35px;
+	font-family: digital-clock-f;
+	text-shadow: 0 0 8px #000;	
+	cursor: auto;
+}
+@media screen and (max-width: 701px)
+{
+    .fieldset
+	{
+		position: fixed;
+		bottom: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 220px;
+	}
+}
+@media screen and (max-width: 601px)
+{
+    .fieldset
+	{
+		position: fixed;
+		bottom: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 220px;
+	}
+}
+@media screen and (max-width: 501px)
+{
+    .fieldset
+	{
+		position: fixed;
+		bottom: 30px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 200px;
+	}
+	.fieldset .legend
+	{
+		padding: 8px 8px;
+		font-size: 20px;
+		margin: 0 0 -20px 0;
+	}
+	.fieldset .time-box
+	{
+		padding: 25px 15px 8px 15px;
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 401px)
+{
+    .fieldset
+	{
+		position: fixed;
+		bottom: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 220px;
+	}
+}
+@media screen and (max-width: 301px)
+{
+    .fieldset
+	{
+		position: fixed;
+		bottom: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 220px;
+	}
+}
+@media screen and (max-width: 201px)
+{
+    .fieldset
+	{
+		position: fixed;
+		bottom: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 220px;
+	}
+}

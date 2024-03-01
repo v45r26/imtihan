@@ -1,0 +1,226 @@
+@font-face
+{
+	font-family: Jura;
+	src: url(../G-Fonts/Jura-SemiBold.ttf);
+}
+@font-face
+{
+	font-family: roboto;
+	src: url(../G-Fonts/Roboto-Regular.ttf);
+}
+@font-face
+{
+	font-family: dancing_script_reg;
+	src: url(../G-Fonts/DancingScript-Regular.ttf);
+}
+*,
+::before,
+::after
+{
+	outline: none;
+	box-sizing: border-box;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	font-family: roboto;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.footer
+{
+	position: unset;
+	left: 0;
+	right: 0;
+	bottom: -1;
+	background: #111;
+	height: auto;
+	width: 100vw;
+	box-shadow: 0 0 10px 1px #000000;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.footer,
+.footer a
+{
+	color: #fff;
+}
+.footer .footer-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer .footer-content h3
+{
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border: 10px solid #fff0;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: -5px -5px 10px 0px #252525,
+                5px 5px 10px 0px #000;
+    padding: 10px 12px;
+    user-select: none;
+}
+.footer .footer-content p.qoute
+{
+	font-family: dancing_script_reg;
+	font-size: 20px;
+	color:#c7c3c3;
+	text-shadow: 0 0 5px #4a4a4a;
+	width: 80%;
+	margin-bottom: 40px;
+}
+.footer .footer-content p.qoute .writer
+{
+	font-family: jura;
+	float: right;
+	margin: 10px;
+}
+.footer .socials
+{
+	width: 55%;
+	box-shadow: 0 -6px 10px 1px #000000b3;
+	list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 -1px 0;
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.footer .socials li
+{
+	background: #1f1f1f0;
+	border: 0px solid #ffffff;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 0 40px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.footer .socials li:hover
+{
+	box-shadow: 0px 0px 8px 1px #b1b1b18c;
+}
+.footer .socials li a
+{
+    text-decoration: none;
+    color: #fff0;
+}
+.footer .socials li a i
+{
+	font-size: 25px;
+    color: #ffffff;
+}
+.footer .footer-bottom
+{
+	box-shadow: 0 0 10px 1px #000;
+	background: #111;
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+    word-spacing: 2px;
+    font-family: roboto;
+    text-transform: uppercase;
+    z-index: -2;
+}
+.footer .footer-bottom span
+{
+    font-family: jura;
+	color: #9E9E9E;
+	font-size: 17px;
+	text-decoration: underline;
+}
+.footer .footer-bottom a
+{
+	color: #565656;
+	font-size: 15px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.footer .footer-bottom a:hover
+{
+	color: #929292;
+	text-decoration: underline;
+}
+.footer .footer-bottom .danda
+{
+	color: #565656;
+}
+@media screen and (max-width: 1070px)
+{
+	.footer .socials li
+	{
+		margin: 0 30px;
+	}
+
+}
+@media screen and (max-width: 870px)
+{
+	.footer .socials li
+	{
+		margin: 0 20px;
+	}
+
+}
+@media screen and (max-width: 770px)
+{
+	.footer .socials
+	{
+		width: 100%;
+		border-radius: 0;
+	}
+	.footer .socials li
+	{
+		margin: 0 50px;
+	}
+
+}
+@media screen and (max-width: 670px)
+{
+	.footer .socials li
+	{
+		margin: 0 40px;
+	}
+
+}
+@media screen and (max-width: 570px)
+{
+	.footer .socials li
+	{
+		margin: 0 30px;
+	}
+
+}
+@media screen and (max-width: 470px)
+{
+	.footer .socials li
+	{
+		margin: 0 20px;
+	}
+
+}
+@media screen and (max-width: 370px)
+{
+	.footer .socials li
+	{
+		margin: 0 10px;
+	}
+
+}
+@media screen and (max-width: 300px)
+{
+	.footer .socials li
+	{
+		margin: 0 5px;
+	}
+
+}

@@ -1,0 +1,65 @@
+* 
+{
+	box-sizing: border-box;
+	outline: none;
+}
+body, html 
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../image/back-wallpaper-it.jpg);
+	height: 100vh;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	overflow-y: scroll;
+}
+.container
+{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	min-width: 400px;
+	padding: 10px 40px;
+	background: rgb(21 21 21 / 96%);
+	box-shadow: 0 0 0px 10px rgb(0 0 0);
+	border-radius: 0px;
+	color: #fff;
+}
+.container hr
+{
+	border: none;
+	border-top: 1px solid #7e7e7e;
+	border-bottom: 1px solid #000000;
+}
+.container .btn-box
+{
+	margin: auto;
+	max-width: 250px;
+	background:#0000;	
+}
+.container .btn-box .btn
+{
+	text-decoration: none;
+	color: #fff;
+	border: none;
+	font-size: 18px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.container .btn-box .btn.red-bg-color
+{
+	background-color: #ff3f3f;
+}
+.container .btn-box .btn.cancel-bg-color
+{
+	background-color: #2d375b;
+}
+.container .btn-box .btn.red-bg-color:hover,
+.container .btn-box .btn.cancel-bg-color:hover
+{
+	box-shadow: 0 0 10px 1px #000000;
+}

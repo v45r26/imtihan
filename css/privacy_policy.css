@@ -1,0 +1,67 @@
+@font-face
+{
+	font-family: Jura;
+	src: url(../G-Fonts/Jura-SemiBold.ttf);
+}
+@font-face
+{
+	font-family: roboto;
+	src: url(../G-Fonts/Roboto-Regular.ttf);
+}
+*,
+::before,
+::after
+{
+	outline: none;
+	box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar 
+{
+  	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track 
+{
+  	background: #dcdcdcf0;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb 
+{
+  	background: #949494;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{
+ 	background: #636363;
+}
+::selection 
+{
+  	color: white;
+  	background: #4b4b4b;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	font-family: roboto;
+	overflow-y: scroll;
+}
+.container
+{
+	margin: auto;
+	margin-bottom: 40px;
+	max-width: 800px;
+	height: auto;
+	background: #fff;
+	border:0px solid #000;
+	border-radius: 10px;
+	box-shadow: 0 0 5px 1px #afafaf;
+	overflow: hidden;
+	padding: 20px;
+}
